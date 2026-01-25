@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akhila | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>Hi, I’m Akhila 👋</h1>
+    <h3>B.Tech IT Student | Aspiring Web Developer</h3>
+    <p>
+      I build responsive websites and real-world applications using
+      HTML, CSS, JavaScript, and Python.
+    </p>
+    <button>Download Resume</button>
+    <button>Contact Me</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Information Technology student at Vignan’s Institute of Management
+      and Technology for Women, Hyderabad. I have hands-on experience in web
+      development through internships and projects. I enjoy building clean,
+      user-friendly web applications and I am looking for an entry-level IT role
+      where I can learn and grow.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Python, FastAPI</li>
+      <li>SQL, Docker</li>
+      <li>GitHub, Postman</li>
+      <li>Agile & Waterfall</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Drum Kit Web Application</h3>
+      <p>
+        Developed an interactive drum kit application that allows users
+        to play sounds using keyboard and mouse events.
+      </p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="project">
+      <h3>Potato Leaf Disease Classification System</h3>
+      <p>
+        Built a deep learning-based web application to classify potato leaf
+        diseases. Developed REST APIs using FastAPI and deployed the app
+        using Docker.
+      </p>
+      <p><strong>Technologies:</strong> Python, Keras, FastAPI, Docker</p>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <h2>Internship</h2>
+    <p>
+      <strong>Web Development Intern – Intenpe</strong><br>
+      Gained hands-on experience in building responsive websites using
+      HTML, CSS, and JavaScript. Learned front-end best practices.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: chakhila2005@gmail.com</p>
+    <p>Phone: +91 7207645309</p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/ch-akhila-938a9527b/" target="_blank">
+        View Profile
+      </a>
+    </p>
+  </section>
+<!-- JavaScript for buttons -->
+<script>
+  // Get the buttons
+  const downloadBtn = document.querySelector("#home button:nth-of-type(1)");
+  const contactBtn = document.querySelector("#home button:nth-of-type(2)");
+
+  // Download Resume button click
+  downloadBtn.addEventListener("click", () => {
+    // Replace 'resume.pdf' with your actual resume file path
+    window.open("c:/Users/User/Downloads/Akhila Resume.pdf", "_blank");
+  });
+
+  // Contact Me button click
+  contactBtn.addEventListener("click", () => {
+    // Scroll to contact section smoothly
+    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
+
+</body>
+</html>
